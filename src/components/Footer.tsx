@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <img 
-                  src="/lovable-uploads/03c427bf-d26a-4e34-81c3-e92c2dadd62f.png" 
+                  src="public/lovable-uploads/image-removebg-preview-6.png" 
                   alt="Makjuz Logo" 
                   className="h-12 w-auto"
                 />
@@ -22,11 +22,11 @@ const Footer = () => {
               </p>
             </div>
             
-            <div className="flex items-center space-x-2 text-sm text-gray-400">
+            {/* <div className="flex items-center space-x-2 text-sm text-gray-400">
               <span>Made with</span>
               <Heart className="h-4 w-4 text-red-400 fill-current" />
               <span>in San Francisco</span>
-            </div>
+            </div> */}
           </div>
           
           {/* Services */}
@@ -80,7 +80,7 @@ const Footer = () => {
                 <div>
                   <p className="text-gray-400 text-sm">Email</p>
                   <a href="mailto:hello@makjuz.com" className="text-white hover:text-[#BCE268] transition-colors">
-                    hello@makjuz.com
+                    support@makjuz.com
                   </a>
                 </div>
               </div>
@@ -90,7 +90,7 @@ const Footer = () => {
                 <div>
                   <p className="text-gray-400 text-sm">Phone</p>
                   <a href="tel:+15551234567" className="text-white hover:text-[#BCE268] transition-colors">
-                    +1 (555) 123-4567
+                  +91 9597430022
                   </a>
                 </div>
               </div>

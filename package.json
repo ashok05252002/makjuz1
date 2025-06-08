@@ -3,7 +3,6 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://ashok05252002.github.io/makjuz1",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
