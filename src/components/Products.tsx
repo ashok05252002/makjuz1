@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Users, Package, ArrowRight } from 'lucide-react';
@@ -25,9 +24,9 @@ const Products = () => {
   ];
 
   return (
-    <section className="py-20 lg:py-32 px-6 lg:px-12 bg-gradient-to-b from-white to-gray-50/50">
+    <section className="pt-8 pb-16 lg:pt-12 lg:pb-24 px-6 lg:px-12 bg-gradient-to-b from-white to-gray-50/50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 space-y-6">
+        <div className="text-center mb-8 space-y-4">
           <h2 className="text-4xl lg:text-6xl font-bold text-gray-900">
             Our <span className="text-[#905BA0]">Products</span>
           </h2>
@@ -40,9 +39,13 @@ const Products = () => {
           {products.map((product, index) => (
             <div 
               key={index}
-              className="group p-8 rounded-3xl bg-white border border-gray-100 hover:border-[#905BA0]/30 shadow-sm hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+              className="group p-8 rounded-3xl bg-white border border-gray-100 hover:border-[#905BA0]/30 shadow-sm hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden"
             >
-              <div className="space-y-6">
+              {/* Top-left gradient blob */}
+              <div className="absolute -top-8 -left-8 w-32 h-32 bg-gradient-to-br from-[#905BA0]/20 to-transparent rounded-full blur-2xl z-0 pointer-events-none" />
+              {/* Bottom-right gradient blob */}
+              <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-gradient-to-tr from-[#c084fc]/20 to-transparent rounded-full blur-2xl z-0 pointer-events-none" />
+              <div className="space-y-6 relative z-10">
                 <div className="w-20 h-20 bg-[#905BA0]/10 text-[#905BA0] rounded-2xl flex items-center justify-center group-hover:bg-[#905BA0] group-hover:text-white transition-all duration-300">
                   {product.icon}
                 </div>
