@@ -11,6 +11,8 @@ import InventoryManagement from "./pages/InventoryManagement";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import Courses from "./components/Courses";
+import CourseDetail from "./pages/CoursesDetail";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +30,8 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/products/payroll-software" element={<PayrollSoftware />} />
           <Route path="/products/inventory-management" element={<InventoryManagement />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/courses/:id" element={<CourseDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
