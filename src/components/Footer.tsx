@@ -1,8 +1,24 @@
-
 import React from 'react';
 import { Heart, Mail, Phone, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const serviceLinks = [
+    { name: 'Custom Software Development', path: '/services' },
+    { name: 'Mobile App Development', path: '/services' },
+    { name: 'Cloud Solutions', path: '/services' },
+    { name: 'Digital Transformation', path: '/services' },
+    { name: 'Consulting Services', path: '/services' },
+    { name: 'Support & Maintenance', path: '/services' },
+  ];
+  const companyLinks = [
+    { name: 'About Us', path: '/about' },
+    { name: 'Our Team', path: '/about' },
+    { name: 'Careers', path: '/about' },
+    { name: 'Case Studies', path: '/about' },
+    { name: 'Blog', path: '/about' },
+    { name: 'Contact', path: '/contact' },
+  ];
   return (
     <footer className="bg-gray-900 text-white py-16 px-6 lg:px-12">
       <div className="max-w-7xl mx-auto">
@@ -25,7 +41,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 text-sm text-gray-400">
               <span>Made with</span>
               <Heart className="h-4 w-4 text-red-400 fill-current" />
-              <span>in San Francisco</span>
+              <span>in India</span>
             </div>
           </div>
           
@@ -33,18 +49,11 @@ const Footer = () => {
           <div className="space-y-6">
             <h4 className="text-xl font-semibold text-white">Services</h4>
             <ul className="space-y-3">
-              {[
-                'Custom Software Development',
-                'Mobile App Development',
-                'Cloud Solutions',
-                'Digital Transformation',
-                'Consulting Services',
-                'Support & Maintenance'
-              ].map((service, index) => (
+              {serviceLinks.map((service, index) => (
                 <li key={index}>
-                  <a href="#" className="text-gray-400 hover:text-[#BCE268] transition-colors duration-300">
-                    {service}
-                  </a>
+                  <Link to={service.path} className="text-gray-400 hover:text-[#905BA0] transition-colors duration-300">
+                    {service.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -54,18 +63,11 @@ const Footer = () => {
           <div className="space-y-6">
             <h4 className="text-xl font-semibold text-white">Company</h4>
             <ul className="space-y-3">
-              {[
-                'About Us',
-                'Our Team',
-                'Careers',
-                'Case Studies',
-                'Blog',
-                'Contact'
-              ].map((item, index) => (
+              {companyLinks.map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="text-gray-400 hover:text-[#BCE268] transition-colors duration-300">
-                    {item}
-                  </a>
+                  <Link to={item.path} className="text-gray-400 hover:text-[#905BA0] transition-colors duration-300">
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -76,32 +78,32 @@ const Footer = () => {
             <h4 className="text-xl font-semibold text-white">Contact Info</h4>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <Mail className="h-5 w-5 text-[#BCE268] mt-0.5 flex-shrink-0" />
+                <Mail className="h-5 w-5 text-[#905BA0] mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-gray-400 text-sm">Email</p>
-                  <a href="mailto:hello@makjuz.com" className="text-white hover:text-[#BCE268] transition-colors">
-                    hello@makjuz.com
+                  <a href="mailto:support@makjuz.com" className="text-white hover:text-[#905BA0] transition-colors">
+                    support@makjuz.com
                   </a>
                 </div>
               </div>
               
               <div className="flex items-start space-x-3">
-                <Phone className="h-5 w-5 text-[#BCE268] mt-0.5 flex-shrink-0" />
+                <Phone className="h-5 w-5 text-[#905BA0] mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-gray-400 text-sm">Phone</p>
-                  <a href="tel:+15551234567" className="text-white hover:text-[#BCE268] transition-colors">
-                    +1 (555) 123-4567
+                  <a href="tel:+919597430022" className="text-white hover:text-[#905BA0] transition-colors">
+                  +919597430022
                   </a>
                 </div>
               </div>
               
               <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-[#BCE268] mt-0.5 flex-shrink-0" />
+                <MapPin className="h-5 w-5 text-[#905BA0] mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-gray-400 text-sm">Address</p>
                   <p className="text-white">
                     123 Innovation Drive<br />
-                    San Francisco, CA 94105
+                   India Kanchipuram
                   </p>
                 </div>
               </div>
@@ -113,19 +115,19 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © 2024 Makjuz. All rights reserved.
+              © 2025 Makjuz. All rights reserved.
             </p>
             
             <div className="flex items-center space-x-6">
-              <a href="#" className="text-gray-400 hover:text-[#BCE268] transition-colors text-sm">
+              <Link to="/privacy-policy" className="text-gray-400 hover:text-[#905BA0] transition-colors text-sm">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-[#BCE268] transition-colors text-sm">
+              </Link>
+              <Link to="/terms-of-service" className="text-gray-400 hover:text-[#905BA0] transition-colors text-sm">
                 Terms of Service
-              </a>
-              <a href="#" className="text-gray-400 hover:text-[#BCE268] transition-colors text-sm">
+              </Link>
+              <Link to="/cookies" className="text-gray-400 hover:text-[#905BA0] transition-colors text-sm">
                 Cookies
-              </a>
+              </Link>
             </div>
           </div>
         </div>
