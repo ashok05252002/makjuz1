@@ -38,7 +38,7 @@ const Footer = () => {
               </p>
             </div>
             
-            <div className="flex items-center space-x-2 text-sm text-gray-400">
+            {/* <div className="flex items-center space-x-2 text-sm text-gray-400">
               <span>Made with</span>
               <Heart className="h-4 w-4 text-red-400 fill-current" />
               <span>in India</span>
