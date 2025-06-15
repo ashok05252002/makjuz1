@@ -21,7 +21,7 @@ const About = () => {
   ];
 
   return (
-    <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white">
+    <section className="py-20 lg:py-32 px-6 lg:px-12 bg-white min-h-screen">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-6">
           <h2 className="text-4xl lg:text-6xl font-bold text-gray-900">
@@ -36,17 +36,13 @@ const About = () => {
           {values.map((value, index) => (
             <div 
               key={index}
-              className="text-center p-8 rounded-2xl bg-gray-50/50 hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative overflow-hidden"
+              className="text-center p-8 rounded-2xl bg-gray-50/50 hover:bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              {/* Top-left gradient blob */}
-              <div className="absolute -top-8 -left-8 w-24 h-24 bg-gradient-to-br from-[#905BA0]/30 to-transparent rounded-full blur-2xl z-0 pointer-events-none" />
-              {/* Bottom-right gradient blob */}
-              <div className="absolute -bottom-8 -right-8 w-28 h-28 bg-gradient-to-tr from-[#c084fc]/30 to-transparent rounded-full blur-2xl z-0 pointer-events-none" />
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-[#905BA0] text-white rounded-2xl mb-6 shadow-lg relative z-10">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-[#905BA0] text-white rounded-2xl mb-6 shadow-lg">
                 {value.icon}
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 relative z-10">{value.title}</h3>
-              <p className="text-gray-600 leading-relaxed relative z-10">{value.description}</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">{value.title}</h3>
+              <p className="text-gray-600 leading-relaxed">{value.description}</p>
             </div>
           ))}
         </div>
@@ -55,4 +51,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default About; 

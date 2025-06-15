@@ -53,11 +53,11 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-20 lg:py-32 px-6 lg:px-12 bg-gray-50">
+    <section className="pt-8 pb-16 lg:pt-12 lg:pb-24 px-6 lg:px-12 bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 space-y-6">
+        <div className="text-center mb-8 space-y-4">
           <h2 className="text-4xl lg:text-6xl font-bold text-gray-900">
-            Let's Build Something <span className="text-[#BCE268]">Amazing</span>
+            Let's Build Something <span className="text-[#905BA0]">Amazing</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Ready to transform your ideas into reality? Get in touch with our team and let's discuss how we can help your business thrive.
@@ -76,7 +76,7 @@ const Contact = () => {
             
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-[#BCE268] text-gray-900 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#905BA0] text-white rounded-xl flex items-center justify-center">
                   <Mail className="h-6 w-6" />
                 </div>
                 <div>
@@ -86,22 +86,22 @@ const Contact = () => {
               </div>
               
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-[#BCE268] text-gray-900 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#905BA0] text-white rounded-xl flex items-center justify-center">
                   <Phone className="h-6 w-6" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Call Us</h4>
-                  <p className="text-gray-600">+91 9597430022</p>
+                  <p className="text-gray-600">+919597430022</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-[#BCE268] text-gray-900 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-[#905BA0] text-white rounded-xl flex items-center justify-center">
                   <MapPin className="h-6 w-6" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Visit Us</h4>
-                  <p className="text-gray-600">69B,vilakadi kovil street,<br />kanchipuram</p>
+                  <p className="text-gray-600">123 Innovation Drive<br />Kanchipuram, Tamil Nadu, India</p>
                 </div>
               </div>
             </div>
@@ -120,7 +120,7 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="h-12 rounded-xl border-gray-200 focus:border-[#BCE268] focus:ring-[#BCE268]"
+                    className="h-12 rounded-xl border-gray-200 focus:border-[#905BA0] focus:ring-[#905BA0]"
                     placeholder="Your full name"
                     required
                   />
@@ -136,7 +136,7 @@ const Contact = () => {
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="h-12 rounded-xl border-gray-200 focus:border-[#BCE268] focus:ring-[#BCE268]"
+                    className="h-12 rounded-xl border-gray-200 focus:border-[#905BA0] focus:ring-[#905BA0]"
                     placeholder="your@email.com"
                     required
                   />
@@ -152,7 +152,7 @@ const Contact = () => {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="h-12 rounded-xl border-gray-200 focus:border-[#BCE268] focus:ring-[#BCE268]"
+                  className="h-12 rounded-xl border-gray-200 focus:border-[#905BA0] focus:ring-[#905BA0]"
                   placeholder="Your company name"
                 />
               </div>
@@ -167,7 +167,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={6}
-                  className="rounded-xl border-gray-200 focus:border-[#BCE268] focus:ring-[#BCE268] resize-none"
+                  className="rounded-xl border-gray-200 focus:border-[#905BA0] focus:ring-[#905BA0] resize-none"
                   placeholder="Tell us about your project, timeline, and any specific requirements..."
                   required
                 />
@@ -182,7 +182,7 @@ const Contact = () => {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-[#BCE268] hover:bg-[#a8d155] text-gray-900 font-semibold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="w-full bg-[#905BA0] hover:bg-[#7d4f8a] text-white font-semibold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 Send Message
                 <Send className="ml-2 h-5 w-5" />
