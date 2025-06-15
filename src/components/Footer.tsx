@@ -37,12 +37,6 @@ const Footer = () => {
                 Building the future, one line of code at a time. We create software that grows with your business.
               </p>
             </div>
-            
-            {/* <div className="flex items-center space-x-2 text-sm text-gray-400">
-              <span>Made with</span>
-              <Heart className="h-4 w-4 text-red-400 fill-current" />
-              <span>in India</span>
-            </div>
           </div>
           
           {/* Services */}
