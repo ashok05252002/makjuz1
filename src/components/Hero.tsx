@@ -13,7 +13,7 @@ const Hero = () => {
             <div className="space-y-6">
               <div className="flex items-center space-x-4 mb-6">
                 <img 
-                  src="public/lovable-uploads/image-removebg-preview-6.png" 
+                  src="/lovable-uploads/e7727d2f-ea5c-4c64-89ba-ea909ea26600.png" 
                   alt="Makjuz Logo" 
                   className="h-16 w-auto"
                 />
@@ -36,14 +36,14 @@ const Hero = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               
-              {/* <Button 
+              <Button 
                 variant="outline" 
                 size="lg"
                 className="border-2 border-gray-300 hover:border-[#905BA0] text-gray-700 font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:shadow-lg"
               >
                 <Play className="mr-2 h-5 w-5" />
                 Watch Demo
-              </Button> */}
+              </Button>
             </div>
           </div>
           
