@@ -12,17 +12,44 @@ const Contact = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Handle form submission here
-  };
+  const [resultMessage, setResultMessage] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setResultMessage("Sending...");
+
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        access_key: "6b70db7b-b7dc-4ad2-83d6-4224da71165f",
+        name: formData.name,
+        email: formData.email,
+        company: formData.company,
+        message: formData.message
+      })
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      setResultMessage("Form submitted successfully!");
+      setFormData({ name: '', email: '', company: '', message: '' });
+    } else {
+      console.error("Submission error:", result);
+      setResultMessage("Something went wrong. Please try again.");
+    }
   };
 
   return (
@@ -145,6 +172,12 @@ const Contact = () => {
                   required
                 />
               </div>
+
+              {resultMessage && (
+                <div className="text-sm font-medium text-center text-green-600">
+                  {resultMessage}
+                </div>
+              )}
               
               <Button
                 type="submit"

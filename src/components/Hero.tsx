@@ -41,12 +41,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in">
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-              className="space-y-6"
-            >
+            <div className="space-y-6">
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
                 <motion.span
                   initial={{ opacity: 0, x: -40 }}
@@ -73,7 +68,7 @@ const Hero = () => {
               >
                 We build innovative digital solutions that transform businesses and create meaningful connections between technology and people.
               </motion.p>
-            </motion.div>
+            </div>
             <motion.div
               className="flex flex-col sm:flex-row gap-4"
               initial={{ opacity: 0, y: 40 }}

@@ -28,7 +28,7 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <img 
-                  src="/lovable-uploads/03c427bf-d26a-4e34-81c3-e92c2dadd62f.png" 
+                  src="/lovable-uploads/e7727d2f-ea5c-4c64-89ba-ea909ea26600.png" 
                   alt="Makjuz Logo" 
                   className="h-12 w-auto"
                 />
@@ -92,7 +92,7 @@ const Footer = () => {
                 <div>
                   <p className="text-gray-400 text-sm">Phone</p>
                   <a href="tel:+919597430022" className="text-white hover:text-[#905BA0] transition-colors">
-                  +919597430022
+                    +919597430022
                   </a>
                 </div>
               </div>
@@ -103,7 +103,7 @@ const Footer = () => {
                   <p className="text-gray-400 text-sm">Address</p>
                   <p className="text-white">
                     123 Innovation Drive<br />
-                   India Kanchipuram
+                    India Kanchipuram
                   </p>
                 </div>
               </div>
