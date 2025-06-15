@@ -75,7 +75,6 @@ const Hero = () => {
               >
                 We build innovative digital solutions that transform businesses and create meaningful connections between technology and people.
               </motion.p>
-            </motion.div>
             <motion.div
               className="flex flex-col sm:flex-row gap-4"
               initial={{ opacity: 0, y: 40 }}
@@ -144,6 +143,7 @@ const Hero = () => {
             </div>
           ))}
         </motion.div>
+      </div>
       </div>
     </section>
   );
