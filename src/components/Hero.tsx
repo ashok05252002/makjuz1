@@ -42,13 +42,6 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-6">
-              <div className="flex items-center space-x-4 mb-6">
-                <img 
-                  src="/lovable-uploads/e7727d2f-ea5c-4c64-89ba-ea909ea26600.png" 
-                  alt="Makjuz Logo" 
-                  className="h-16 w-auto"
-                />
-              </div>
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
                 <motion.span
                   initial={{ opacity: 0, x: -40 }}
@@ -75,6 +68,7 @@ const Hero = () => {
               >
                 We build innovative digital solutions that transform businesses and create meaningful connections between technology and people.
               </motion.p>
+            </div>
             <motion.div
               className="flex flex-col sm:flex-row gap-4"
               initial={{ opacity: 0, y: 40 }}
@@ -144,7 +138,7 @@ const Hero = () => {
           ))}
         </motion.div>
       </div>
-      </div>
+      
     </section>
   );
 };

@@ -37,12 +37,6 @@ const Footer = () => {
                 Building the future, one line of code at a time. We create software that grows with your business.
               </p>
             </div>
-            
-            {/* <div className="flex items-center space-x-2 text-sm text-gray-400">
-              <span>Made with</span>
-              <Heart className="h-4 w-4 text-red-400 fill-current" />
-              <span>in India</span>
-            </div>
           </div>
           
           {/* Services */}
@@ -92,7 +86,7 @@ const Footer = () => {
                 <div>
                   <p className="text-gray-400 text-sm">Phone</p>
                   <a href="tel:+919597430022" className="text-white hover:text-[#905BA0] transition-colors">
-                  +919597430022
+                    +919597430022
                   </a>
                 </div>
               </div>
@@ -103,7 +97,7 @@ const Footer = () => {
                   <p className="text-gray-400 text-sm">Address</p>
                   <p className="text-white">
                     123 Innovation Drive<br />
-                   India Kanchipuram
+                    India Kanchipuram
                   </p>
                 </div>
               </div>
@@ -131,7 +125,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
       </div>
     </footer>
   );
