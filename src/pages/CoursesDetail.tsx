@@ -145,7 +145,7 @@ const CourseDetail = () => {
       <div className="min-h-screen flex items-center justify-center bg-gray-100">
         <div className="text-center">
           <h1 className="text-3xl font-bold mb-4">Course Not Found</h1>
-          <button onClick={() => navigate('/courses')} className="text-[#905BA0] underline">Back to Courses</button>
+          <button onClick={() => window.open('/courses','_blank')} className="text-[#905BA0] underline">Back to Courses</button>
         </div>
       </div>
     );
