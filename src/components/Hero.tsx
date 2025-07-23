@@ -24,7 +24,7 @@ const blobVariants = {
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center px-6 lg:px-12 bg-gradient-to-br from-white via-purple-50/30 to-purple-100/40 overflow-hidden">
+    <section className="relative min-h-screen mt-20 lg:mt-0 flex flex-col justify-center px-6 lg:px-12 bg-gradient-to-br from-white via-purple-50/30 to-purple-100/40 overflow-hidden">
       {/* Animated Blobs */}
       <motion.div
         className="absolute top-[-60px] left-[-60px] w-72 h-72 bg-[#905BA0]/20 rounded-full blur-2xl z-0"

@@ -96,8 +96,8 @@ const Footer = () => {
                 <div>
                   <p className="text-gray-400 text-sm">Address</p>
                   <p className="text-white">
-                    123 Innovation Drive<br />
-                    India Kanchipuram
+                  69B, Vilakadi Kovil Street, <br />
+                  Kanchipuram - 631501.
                   </p>
                 </div>
               </div>

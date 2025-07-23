@@ -110,7 +110,7 @@ const InventoryManagement = () => {
       name: "Business",
       price: "₹9,999",
       period: "/month",
-      features: ["Up to 20 warehouses", "Advanced analytics", "Billing integration", "Priority support", "Up to 10,000 products", "Multi-currency support"]
+      features: ["Up to 20 warehouses", "Advanced analytics", "Billing integration", "Priority support", "Up to 15,000 products", "Multi-currency support"]
     },
     {
       name: "Enterprise",

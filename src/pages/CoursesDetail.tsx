@@ -19,7 +19,7 @@ const courseData = [
     description: 'Master data pipelines, ETL, and analytics on Microsoft Azure. This course covers everything from data ingestion to advanced analytics, preparing you for real-world data engineering roles.',
     icon: <Database className="text-white w-12 h-12" />, 
     image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80',
-    amount: '₹10,000',
+    amount: '₹15,000',
     bullets: [
       'Data pipeline design and implementation',
       'ETL processes and best practices',
@@ -34,7 +34,7 @@ const courseData = [
     description: 'Learn cloud infrastructure, deployment, and management across platforms. This course provides hands-on experience with leading cloud providers and modern DevOps practices.',
     icon: <Cloud className="text-white w-12 h-12" />, 
     image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80',
-    amount: '₹10,000',
+    amount: '₹15,000',
     bullets: [
       'Cloud architecture fundamentals',
       'Multi-cloud deployment strategies',
@@ -49,7 +49,7 @@ const courseData = [
     description: 'Explore generative models, LLMs, and AI-driven content creation. This course dives into the latest advancements in AI and their practical applications.',
     icon: <Bot className="text-white w-12 h-12" />, 
     image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80',
-    amount: '₹10,000',
+    amount: '₹15,000',
     bullets: [
       'Introduction to generative models',
       'Working with LLMs (Large Language Models)',
@@ -64,7 +64,7 @@ const courseData = [
     description: 'Design, manage, and optimize SQL databases for real-world applications. Gain expertise in database administration, performance tuning, and security.',
     icon: <Table className="text-white w-12 h-12" />, 
     image: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=900&q=80',
-    amount: '₹10,000',
+    amount: '₹15,000',
     bullets: [
       'Database schema design',
       'Advanced SQL queries',
@@ -79,7 +79,7 @@ const courseData = [
     description: 'Build, train, and deploy machine learning models for various domains. This course covers supervised, unsupervised, and deep learning techniques.',
     icon: <Brain className="text-white w-12 h-12" />, 
     image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=900&q=80',
-    amount: '₹10,000',
+    amount: '₹15,000',
     bullets: [
       'Supervised and unsupervised learning',
       'Model evaluation and selection',
@@ -94,7 +94,7 @@ const courseData = [
     description: 'Analyze data, extract insights, and drive business decisions with data science. Learn the full data science workflow from data wrangling to visualization.',
     icon: <BarChart2 className="text-white w-12 h-12" />, 
     image: 'https://images.unsplash.com/photo-1517148815978-75f6acaaf32c?auto=format&fit=crop&w=900&q=80',
-    amount: '₹10,000',
+    amount: '₹15,000',
     bullets: [
       'Data wrangling and cleaning',
       'Exploratory data analysis',
@@ -109,7 +109,7 @@ const courseData = [
     description: 'Transform raw data into actionable insights using modern analytics tools. This course emphasizes practical skills for business and technical roles.',
     icon: <PieChart className="text-white w-12 h-12" />, 
     image: 'https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=900&q=80',
-    amount: '₹10,000',
+    amount: '₹15,000',
     bullets: [
       'Data collection and integration',
       'Descriptive and predictive analytics',
@@ -124,7 +124,7 @@ const courseData = [
     description: 'Architect and maintain scalable, secure cloud solutions. This course prepares you for cloud engineering roles with hands-on labs and projects.',
     icon: <Server className="text-white w-12 h-12" />, 
     image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=900&q=80',
-    amount: '₹10,000',
+    amount: '₹15,000',
     bullets: [
       'Cloud solution architecture',
       'Automation and scripting',
