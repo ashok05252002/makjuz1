@@ -121,7 +121,7 @@ const Courses = () => {
                 </p>
               </div>
               <div className="relative z-20 flex justify-center">
-                <button className="inline-flex items-center gap-2 px-7 py-2.5 rounded-lg bg-[#905BA0] hover:bg-[#7d4f8a] text-white font-semibold text-base shadow-lg transition-all duration-200" onClick={() => navigate(`/courses/${course.id}`)}>
+                <button className="inline-flex items-center gap-2 px-7 py-2.5 rounded-lg bg-[#905BA0] hover:bg-[#7d4f8a] text-white font-semibold text-base shadow-lg transition-all duration-200" onClick={() => window.open(`/courses/${course.id}`,'_blank')}>
                   Details
                 </button>
               </div>
