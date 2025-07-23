@@ -11,21 +11,21 @@ const Testimonials = () => {
     {
       name: "Mr. Silambarasan",
       role: "Project Manager, Payroll Project",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      image: "https://ui-avatars.com/api/?name=Silambarasan&length=1&background=905BA0&color=fff&rounded=true",
       content: "Makjuz delivered an exceptional payroll management system that exceeded all our expectations. Their expertise and dedication transformed our entire HR process. The ROI was visible within the first quarter!",
       rating: 5
     },
     {
       name: "Mrs. Sandhiya S",
       role: "Operations Manager, Sparks India",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      image: "https://ui-avatars.com/api/?name=Sandhiya&length=1&background=905BA0&color=fff&rounded=true",
       content: "Working with Makjuz on our SAP product for manufacturing unit was a game-changer. They delivered a scalable solution that perfectly fits our manufacturing needs. The communication and support throughout the project was exceptional.",
       rating: 5
     },
     {
       name: "Rajesh Kumar",
       role: "CTO, TechFlow Solutions",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
+      image: "https://ui-avatars.com/api/?name=Rajesh&length=1&background=905BA0&color=fff&rounded=true",
       content: "The inventory management system Makjuz built for us has streamlined our entire supply chain. Their attention to detail and performance optimization is unmatched in the industry.",
       rating: 5
     }

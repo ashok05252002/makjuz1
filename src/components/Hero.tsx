@@ -5,8 +5,8 @@ import { motion } from 'framer-motion';
 
 const stats = [
   { icon: <Award className="h-6 w-6 text-[#905BA0]" />, label: '2+ Years Experience' },
-  { icon: <Users className="h-6 w-6 text-[#905BA0]" />, label: '486+ Projects Delivered' },
-  { icon: <Star className="h-6 w-6 text-[#905BA0]" />, label: '5-Star Client Rating' },
+  { icon: <Users className="h-6 w-6 text-[#905BA0]" />, label: '15+ Projects Delivered' },
+  { icon: <Star className="h-6 w-6 text-[#905BA0]" />, label: '4.8 - Star Client Rating' },
 ];
 
 const blobVariants = {

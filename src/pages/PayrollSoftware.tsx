@@ -110,19 +110,11 @@ const PayrollSoftware = () => {
           <Button 
             variant="ghost" 
             onClick={() => navigate('/')}
-            className="mb-6 text-gray-600 hover:text-gray-900"
+            className="mt-10 mb-6 ml-9 text-gray-600 hover:text-gray-900"
           >
             <ArrowLeft className="mr-2 h-5 w-5" />
             Back to Home
           </Button>
-          
-          <div className="flex items-center space-x-4 mb-4">
-            <img 
-              src="/lovable-uploads/e7727d2f-ea5c-4c64-89ba-ea909ea26600.png" 
-              alt="Makjuz Logo" 
-              className="h-12 w-auto"
-            />
-          </div>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
@@ -216,9 +208,9 @@ const PayrollSoftware = () => {
               View Pricing
             </Button>
             <Button 
-              variant="outline"
               size="lg"
-              className="border-2 border-gray-600 hover:border-[#905BA0] text-white font-semibold px-8 py-4 rounded-xl"
+              onClick={() => setShowContactForm(true)}
+              className="bg-[#905BA0] hover:bg-[#7d4f8a] text-white font-semibold px-8 py-4 rounded-xl"
             >
               Schedule Demo
             </Button>

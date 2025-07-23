@@ -1,62 +1,29 @@
 import React, { useEffect, useState } from 'react';
-import { Award, Clock, Users, TrendingUp } from 'lucide-react';
+import { Award, Settings, HandCoins, Handshake} from 'lucide-react';
 
 const WhyChooseUs = () => {
   const stats = [
     {
       icon: <Award className="h-12 w-12" />,
-      number: 500,
-      suffix: "+",
-      label: "Projects Delivered",
-      description: "Successfully completed projects across various industries"
+      label: "Proven Expertise",
+      description: " Our team has deep experience in search engine optimization and website development, helping businesses improve their digital presence and grow online"
     },
     {
-      icon: <Clock className="h-12 w-12" />,
-      number: 98,
-      suffix: "%",
-      label: "On-Time Delivery",
-      description: "We value your time and consistently meet deadlines"
+      icon: <Settings className="h-12 w-12" />,
+      label: "Tailored Solutions",
+      description: "We don’t believe in one-size-fits-all strategies. Every project is approached with fresh ideas designed to suit your unique goals and industry"
     },
     {
-      icon: <Users className="h-12 w-12" />,
-      number: 50,
-      suffix: "+",
-      label: "Expert Developers",
-      description: "Skilled professionals with cutting-edge expertise"
-    },
+      icon: <HandCoins className="h-12 w-12" />,
+      label: "Affordable Packages",
+      description: " High-quality service shouldn’t mean high prices. We offer scalable,cost-effective packages to suit startups and established businesses alike"
+    }, 
     {
-      icon: <TrendingUp className="h-12 w-12" />,
-      number: 200,
-      suffix: "%",
-      label: "ROI Average",
-      description: "Our solutions typically double client investment returns"
+      icon: <Handshake className="h-12 w-12" />,
+      label: " Client-Centric Support",
+      description: "Your satisfaction is our top priority. We’re dedicated to long-term partnerships and ongoing support, helping you succeed now and tomorrow"
     }
   ];
-
-  // Animated count up
-  const [counts, setCounts] = useState(stats.map(() => 0));
-  useEffect(() => {
-    const intervals = stats.map((stat, i) => {
-      let start = 0;
-      const end = stat.number;
-      const duration = 1200;
-      const step = Math.max(1, Math.floor(end / (duration / 16)));
-      return setInterval(() => {
-        setCounts((prev) => {
-          const next = [...prev];
-          if (next[i] < end) {
-            next[i] = Math.min(next[i] + step, end);
-          }
-          return next;
-        });
-      }, 16);
-    });
-    const timeout = setTimeout(() => intervals.forEach(clearInterval), 1300);
-    return () => {
-      intervals.forEach(clearInterval);
-      clearTimeout(timeout);
-    };
-  }, []);
 
   return (
     <section className="pt-8 pb-16 lg:pt-12 lg:pb-24 px-6 lg:px-12 bg-gray-900 text-white relative overflow-hidden">
@@ -91,10 +58,7 @@ const WhyChooseUs = () => {
                 {stat.icon}
               </div>
               <div className="space-y-3 relative z-10">
-                <div className="text-4xl lg:text-5xl font-bold text-[#905BA0]">
-                  {counts[index]}{stat.suffix}
-                </div>
-                <h3 className="text-xl font-semibold text-white">{stat.label}</h3>
+               <h3 className="text-xl font-semibold text-white">{stat.label}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{stat.description}</p>
               </div>
             </div>
