@@ -125,15 +125,15 @@ const InventoryManagement = () => {
       {/* Header */}
       <header className="bg-gradient-to-r from-[#905BA0]/10 to-purple-50/30 py-8 px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
-          <Button 
-            variant="ghost" 
+          <Button
+            variant="ghost"
             onClick={() => navigate('/')}
             className="mt-10 mb-6 ml-9 text-gray-600 hover:text-gray-900"
           >
             <ArrowLeft className="mr-2 h-5 w-5" />
             Back to Home
           </Button>
-          
+
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900">
@@ -142,7 +142,7 @@ const InventoryManagement = () => {
               <p className="text-xl text-gray-600 leading-relaxed">
                 Complete inventory control with real-time tracking, multi-warehouse management, integrated billing, and advanced analytics to transform your supply chain operations.
               </p>
-              <Button 
+              <Button
                 size="lg"
                 onClick={() => setShowContactForm(true)}
                 className="bg-[#905BA0] hover:bg-[#7d4f8a] text-white font-semibold px-8 py-4 rounded-xl"
@@ -150,7 +150,7 @@ const InventoryManagement = () => {
                 Start Free Trial
               </Button>
             </div>
-            
+
             <div className="flex justify-center">
               <div className="w-24 h-24 bg-[#905BA0] rounded-3xl flex items-center justify-center shadow-2xl">
                 <Package className="h-12 w-12 text-white" />
@@ -171,7 +171,7 @@ const InventoryManagement = () => {
               Everything you need to manage inventory, billing, and multi-warehouse operations efficiently and profitably.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="p-6 rounded-2xl bg-gray-50/50 hover:bg-white hover:shadow-lg transition-all duration-300">
@@ -194,7 +194,7 @@ const InventoryManagement = () => {
               Transform Your <span className="text-[#905BA0]">Operations</span>
             </h2>
           </div>
-          
+
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-4">
               {benefits.map((benefit, index) => (
@@ -218,14 +218,14 @@ const InventoryManagement = () => {
             Join businesses worldwide who have transformed their inventory management and billing operations with our comprehensive solution.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
+            <Button
               size="lg"
               onClick={() => setShowPopup(true)}
               className="bg-[#905BA0] hover:bg-[#7d4f8a] text-white font-semibold px-8 py-4 rounded-xl"
             >
               View Pricing
             </Button>
-            <Button 
+            <Button
               size="lg"
               onClick={() => setShowContactForm(true)}
               className="bg-[#905BA0] hover:bg-[#7d4f8a] text-white font-semibold px-8 py-4 rounded-xl"
@@ -246,14 +246,14 @@ const InventoryManagement = () => {
             >
               <X className="h-6 w-6" />
             </button>
-            
+
             <div className="text-center mb-6">
               <h2 className="text-3xl font-bold text-gray-900 mb-2">
                 Start Your <span className="text-[#905BA0]">Free Trial</span>
               </h2>
               <p className="text-gray-600">Get in touch with us to begin your journey</p>
             </div>
-            
+
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <Label htmlFor="name">Full Name</Label>
@@ -267,7 +267,7 @@ const InventoryManagement = () => {
                   className="mt-1"
                 />
               </div>
-              
+
               <div>
                 <Label htmlFor="email">Email Address</Label>
                 <Input
@@ -280,7 +280,7 @@ const InventoryManagement = () => {
                   className="mt-1"
                 />
               </div>
-              
+
               <div>
                 <Label htmlFor="company">Company Name</Label>
                 <Input
@@ -293,7 +293,7 @@ const InventoryManagement = () => {
                   className="mt-1"
                 />
               </div>
-              
+
               <div>
                 <Label htmlFor="phone">Phone Number</Label>
                 <Input
@@ -306,7 +306,7 @@ const InventoryManagement = () => {
                   className="mt-1"
                 />
               </div>
-              
+
               <div>
                 <Label htmlFor="message">Message (Optional)</Label>
                 <Textarea
@@ -319,15 +319,15 @@ const InventoryManagement = () => {
                   placeholder="Tell us about your requirements..."
                 />
               </div>
-              
-              <Button 
-                type="submit" 
+
+              <Button
+                type="submit"
                 className="w-full bg-[#905BA0] hover:bg-[#7d4f8a] text-white mt-6"
               >
                 Submit Request
               </Button>
             </form>
-            
+
             <div className="text-center mt-6 p-4 bg-gray-50 rounded-xl">
               <p className="text-sm text-gray-600">Need immediate assistance?</p>
               <p className="text-lg font-semibold text-gray-900">Contact us at <a href="mailto:founder@makjuz.com" className="text-[#905BA0] hover:underline">founder@makjuz.com</a></p>
@@ -346,14 +346,14 @@ const InventoryManagement = () => {
             >
               <X className="h-6 w-6" />
             </button>
-            
+
             <div className="text-center mb-8">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
                 Choose Your <span className="text-[#905BA0]">Plan</span>
               </h2>
               <p className="text-xl text-gray-600">Select the perfect plan for your inventory management needs</p>
             </div>
-            
+
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               {pricingPlans.map((plan, index) => (
                 <div key={index} className={`p-8 rounded-2xl border-2 ${index === 1 ? 'border-[#905BA0] bg-[#905BA0]/5' : 'border-gray-200'}`}>
@@ -376,7 +376,7 @@ const InventoryManagement = () => {
                 </div>
               ))}
             </div>
-            
+
             <div className="text-center p-6 bg-gray-50 rounded-2xl">
               <p className="text-gray-600 mb-2">Need help choosing the right plan?</p>
               <p className="text-lg font-semibold text-gray-900">Contact us at <a href="mailto:founder@makjuz.com" className="text-[#905BA0] hover:underline">founder@makjuz.com</a></p>

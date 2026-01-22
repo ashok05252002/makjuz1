@@ -8,6 +8,9 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PayrollSoftware from "./pages/PayrollSoftware";
 import InventoryManagement from "./pages/InventoryManagement";
+import ITSolutions from "./pages/ITSolutions";
+import BPOServices from "./pages/BPOServices";
+import ManpowerSupply from "./pages/ManpowerSupply";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
@@ -30,6 +33,9 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/products/payroll-software" element={<PayrollSoftware />} />
           <Route path="/products/inventory-management" element={<InventoryManagement />} />
+          <Route path="/services/it-solutions" element={<ITSolutions />} />
+          <Route path="/services/bpo-services" element={<BPOServices />} />
+          <Route path="/services/manpower-supply" element={<ManpowerSupply />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/courses/:id" element={<CourseDetail />} />
           <Route path="*" element={<NotFound />} />
