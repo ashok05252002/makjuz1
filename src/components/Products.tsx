@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Users, Package, ArrowRight } from 'lucide-react';
+import { Users, Package, ArrowRight, CableCar, Calculator } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const Products = () => {
@@ -20,6 +20,20 @@ const Products = () => {
       description: "Take control of your inventory with real-time tracking, automated reordering, and comprehensive analytics to optimize your supply chain.",
       features: ["Real-time Tracking", "Automated Reordering", "Multi-location Support", "Advanced Analytics"],
       route: "/products/inventory-management"
+    },
+    {
+      icon: <Calculator className="h-12 w-12" />,
+      title: "Billing Software",
+      description: "Take control of your billing with automated invoicing, accurate tax calculations, and real-time financial insights to streamline your business operations.",
+      features: ["Automated Invoicing", "Tax Calculations", "Multi-location Support", "Advanced Analytics"],
+      route: "/products/inventory-management"
+    },
+    {
+      icon: <CableCar className="h-12 w-12" />,
+      title: "Construction Management",
+      description: "Take control of your construction projects with real-time tracking, automated reordering, and comprehensive analytics to optimize your supply chain.",
+      features: ["Project Management", "Task Management", "Budget Management", "Document Management"],
+      route: "/products/inventory-management"
     }
   ];
 
@@ -34,10 +48,10 @@ const Products = () => {
             Discover our flagship software solutions designed to streamline your business operations and drive growth.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           {products.map((product, index) => (
-            <div 
+            <div
               key={index}
               className="group p-8 rounded-3xl bg-white border border-gray-100 hover:border-[#905BA0]/30 shadow-sm hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden"
             >
@@ -49,11 +63,11 @@ const Products = () => {
                 <div className="w-20 h-20 bg-[#905BA0]/10 text-[#905BA0] rounded-2xl flex items-center justify-center group-hover:bg-[#905BA0] group-hover:text-white transition-all duration-300">
                   {product.icon}
                 </div>
-                
+
                 <div className="space-y-4">
                   <h3 className="text-3xl font-bold text-gray-900">{product.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{product.description}</p>
-                  
+
                   <div className="space-y-2">
                     {product.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center space-x-2">
@@ -62,8 +76,8 @@ const Products = () => {
                       </div>
                     ))}
                   </div>
-                  
-                  <Button 
+
+                  <Button
                     onClick={() => navigate(product.route)}
                     className="w-full mt-6 bg-[#905BA0] hover:bg-[#7d4f8a] text-white font-semibold py-3 rounded-xl transition-all duration-300 transform hover:scale-105"
                   >

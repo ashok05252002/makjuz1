@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
+import Footer from '../components/Footer';
 
 const InventoryManagement = () => {
   const navigate = useNavigate();
@@ -384,6 +385,7 @@ const InventoryManagement = () => {
           </div>
         </div>
       )}
+      <Footer />
     </div>
   );
 };

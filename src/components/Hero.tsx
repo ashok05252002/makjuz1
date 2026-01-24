@@ -75,15 +75,15 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.7 }}
             >
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-[#905BA0] hover:bg-[#7d4f8a] text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
                 Call Us
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 size="lg"
                 className="border-2 border-gray-300 hover:border-[#905BA0] text-gray-700 font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:shadow-lg"
               >
@@ -100,10 +100,10 @@ const Hero = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
-              <img 
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop" 
-                alt="Modern software development" 
-                className="w-full h-[500px] object-cover"
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=00&fit=crop"
+                alt="Modern software development"
+                className="w-full h-[435px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#905BA0]/20 to-transparent"></div>
             </div>
@@ -138,7 +138,7 @@ const Hero = () => {
           ))}
         </motion.div>
       </div>
-      
+
     </section>
   );
 };

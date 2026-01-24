@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Monitor, Cloud, Shield, Database, Code, Cpu, CheckCircle } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 const ITSolutions = () => {
     const navigate = useNavigate();
@@ -166,6 +167,7 @@ const ITSolutions = () => {
                     </Button>
                 </div>
             </section>
+            <Footer />
         </div>
     );
 };

@@ -17,7 +17,11 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
+<<<<<<< HEAD
     { name: 'Academy', path: '/courses' },
+=======
+    { name: 'Academy', link: 'https://makjuz-academy.vercel.app/' },
+>>>>>>> 8f306cf (Add payroll pages, previews, and update core components)
     { name: 'Services', path: '/services' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
@@ -27,9 +31,8 @@ const Navbar = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
-      }`}
+      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
+        }`}
       style={{ minHeight: 80 }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -51,23 +54,35 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div className="ml-12 flex items-center space-x-12">
               {navLinks.map((link) => {
-                const isActive = location.pathname === link.path;
+                const isActive = link.path ? location.pathname === link.path : false;
+                const isExternal = !!link.link;
+
+                const linkContent = (
+                  <span
+                    className={`font-medium text-lg transition-colors duration-300 px-2 py-1 ${isActive
+                      ? 'text-[#9256a2]'
+                      : 'text-gray-700 hover:text-[#9256a2]'
+                      }`}
+                  >
+                    {link.name}
+                  </span>
+                );
+
                 return (
                   <motion.div
                     key={link.name}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Link
-                      to={link.path}
-                      className={`font-medium text-lg transition-colors duration-300 px-2 py-1 ${
-                        isActive
-                          ? 'text-[#9256a2]'
-                          : 'text-gray-700 hover:text-[#9256a2]'
-                      }`}
-                    >
-                      {link.name}
-                    </Link>
+                    {isExternal ? (
+                      <a href={link.link} target="_blank" rel="noopener noreferrer">
+                        {linkContent}
+                      </a>
+                    ) : (
+                      <Link to={link.path || '/'}>
+                        {linkContent}
+                      </Link>
+                    )}
                   </motion.div>
                 );
               })}
@@ -115,24 +130,43 @@ const Navbar = () => {
       >
         <div className="px-2 pt-2 pb-3 space-y-1 bg-white/80 backdrop-blur-md">
           {navLinks.map((link) => {
-            const isActive = location.pathname === link.path;
+            const isActive = link.path ? location.pathname === link.path : false;
+            const isExternal = !!link.link;
+
+            const linkContent = (
+              <span
+                className={`block px-3 py-2 font-medium text-lg transition-colors duration-300 ${isActive
+                  ? 'text-[#9256a2]'
+                  : 'text-gray-700 hover:text-[#9256a2]'
+                  }`}
+              >
+                {link.name}
+              </span>
+            );
+
             return (
               <motion.div
                 key={link.name}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Link
-                  to={link.path}
-                  className={`block px-3 py-2 font-medium text-lg transition-colors duration-300 ${
-                    isActive
-                      ? 'text-[#9256a2]'
-                      : 'text-gray-700 hover:text-[#9256a2]'
-                  }`}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {link.name}
-                </Link>
+                {isExternal ? (
+                  <a
+                    href={link.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {linkContent}
+                  </a>
+                ) : (
+                  <Link
+                    to={link.path || '/'}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {linkContent}
+                  </Link>
+                )}
               </motion.div>
             );
           })}

@@ -5,11 +5,26 @@ import { useNavigate } from 'react-router-dom';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
+import Footer from '../components/Footer';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const PayrollSoftware = () => {
   const navigate = useNavigate();
   const [showPopup, setShowPopup] = useState(false);
   const [showContactForm, setShowContactForm] = useState(false);
+  const [showPreview, setShowPreview] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -39,6 +54,15 @@ const PayrollSoftware = () => {
       message: ''
     });
   };
+
+  const previewImages = [
+    { src: "/previews/payroll/dashboard.png", alt: "Payroll Dashboard" },
+    { src: "/previews/payroll/employees.png", alt: "Employee Management" },
+    { src: "/previews/payroll/tax.png", alt: "Tax Compliance & Reporting" },
+    { src: "/previews/payroll/time.png", alt: "Time Tracking & Attendance" },
+    { src: "/previews/payroll/mobile.png", alt: "Mobile Employee Portal" },
+    { src: "/previews/payroll/settings.png", alt: "System Configuration" },
+  ];
 
   const features = [
     {
@@ -124,13 +148,23 @@ const PayrollSoftware = () => {
               <p className="text-xl text-gray-600 leading-relaxed">
                 Streamline your HR processes with our comprehensive payroll management system. Handle employee payments, tax calculations, and compliance effortlessly.
               </p>
-              <Button
-                size="lg"
-                onClick={() => setShowContactForm(true)}
-                className="bg-[#905BA0] hover:bg-[#7d4f8a] text-white font-semibold px-8 py-4 rounded-xl"
-              >
-                Start Free Trial
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button
+                  size="lg"
+                  onClick={() => setShowContactForm(true)}
+                  className="bg-[#905BA0] hover:bg-[#7d4f8a] text-white font-semibold px-8 py-4 rounded-xl"
+                >
+                  Start Free Trial
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  onClick={() => setShowPreview(true)}
+                  className="border-2 border-gray-300 hover:border-[#905BA0] text-gray-700 font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:shadow-lg"
+                >
+                  Preview
+                </Button>
+              </div>
             </div>
 
             <div className="flex justify-center">
@@ -366,6 +400,51 @@ const PayrollSoftware = () => {
           </div>
         </div>
       )}
+
+      {/* Software Preview Modal */}
+      <Dialog open={showPreview} onOpenChange={setShowPreview}>
+        <DialogContent className="max-w-5xl w-[95vw] p-0 bg-transparent border-none shadow-none focus:outline-none">
+          <DialogHeader className="sr-only">
+            <DialogTitle>Software Preview</DialogTitle>
+          </DialogHeader>
+          <div className="relative group p-4">
+            {/* Close Button */}
+            <button
+              onClick={() => setShowPreview(false)}
+              className="absolute top-8 right-8 z-[80] bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-all backdrop-blur-md"
+            >
+              <X className="h-6 w-6" />
+            </button>
+
+            <Carousel className="w-full">
+              <CarouselContent>
+                {previewImages.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <div className="flex flex-col items-center p-1">
+                      <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl bg-white border border-white/10">
+                        <img
+                          src={image.src}
+                          alt={image.alt}
+                          className="w-full h-full object-contain"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-md p-6 text-white border-t border-white/10">
+                          <p className="text-center font-bold text-xl">{image.alt}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <div className="flex items-center justify-center sm:block">
+                <CarouselPrevious className="left-4 sm:left-6 z-[100] h-12 w-12 sm:h-16 sm:w-16 bg-white border-2 border-white/80 text-black transition-all backdrop-blur-md shadow-[0_0_20px_rgba(0,0,0,0.5)] rounded-full hover:scale-110 active:scale-95" />
+                <CarouselNext className="right-4 sm:right-6 z-[100] h-12 w-12 sm:h-16 sm:w-16 bg-white border-2 border-white/80 text-black transition-all backdrop-blur-md shadow-[0_0_20px_rgba(0,0,0,0.5)] rounded-full hover:scale-110 active:scale-95" />
+              </div>
+            </Carousel>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      <Footer />
     </div>
   );
 };

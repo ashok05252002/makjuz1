@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Users, Briefcase, GraduationCap, Building, Target, UserCheck, CheckCircle } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 const ManpowerSupply = () => {
     const navigate = useNavigate();
@@ -166,6 +167,7 @@ const ManpowerSupply = () => {
                     </Button>
                 </div>
             </section>
+            <Footer />
         </div>
     );
 };

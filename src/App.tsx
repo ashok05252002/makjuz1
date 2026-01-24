@@ -16,6 +16,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Courses from "./components/Courses";
 import CourseDetail from "./pages/CoursesDetail";
+import Academy from "./pages/Academy";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/products/payroll-software" element={<PayrollSoftware />} />
           <Route path="/products/inventory-management" element={<InventoryManagement />} />
           <Route path="/services/it-solutions" element={<ITSolutions />} />
+          <Route path="/services/academy" element={<Academy />} />
           <Route path="/services/bpo-services" element={<BPOServices />} />
           <Route path="/services/manpower-supply" element={<ManpowerSupply />} />
           <Route path="/courses" element={<Courses />} />

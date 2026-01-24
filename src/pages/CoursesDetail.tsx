@@ -11,6 +11,7 @@ import {
   Server,
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Footer from '../components/Footer';
 
 const courseData = [
   {
@@ -213,6 +214,7 @@ const CourseDetail = () => {
           <button onClick={() => navigate('/courses')} className="text-[#905BA0] underline text-lg">Back to Courses</button>
         </div>
       </div>
+      <Footer />
     </section>
   );
 };
