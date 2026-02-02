@@ -11,9 +11,9 @@ const Footer = () => {
   ];
   const companyLinks = [
     { name: 'About Us', path: '/about' },
-    { name: 'Our Team', path: '/our-team' },
+    // { name: 'Our Team', path: '/our-team' },
     { name: 'Careers', path: '/careers' },
-    // { name: 'Contact', path: '/contact' },
+    { name: 'Contact', path: '/contact' },
   ];
   return (
     <footer className="bg-gray-900 text-white py-16 px-6 lg:px-12">

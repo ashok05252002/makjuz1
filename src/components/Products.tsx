@@ -26,14 +26,14 @@ const Products = () => {
       title: "Billing Software",
       description: "Take control of your billing with automated invoicing, accurate tax calculations, and real-time financial insights to streamline your business operations.",
       features: ["Automated Invoicing", "Tax Calculations", "Multi-location Support", "Advanced Analytics"],
-      route: "/products/inventory-management"
+      route: "/products/billing-software"
     },
     {
       icon: <CableCar className="h-12 w-12" />,
       title: "Construction Management",
       description: "Take control of your construction projects with real-time tracking, automated reordering, and comprehensive analytics to optimize your supply chain.",
       features: ["Project Management", "Task Management", "Budget Management", "Document Management"],
-      route: "/products/inventory-management"
+      route: "/products/construction-management"
     }
   ];
 

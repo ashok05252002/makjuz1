@@ -19,6 +19,8 @@ import CourseDetail from "./pages/CoursesDetail";
 import Academy from "./pages/Academy";
 import OurTeam from "./pages/OurTeam";
 import Careers from "./pages/Careers";
+import BillingSoftware from "./pages/BillingSoftware";
+import ConstructionManagement from "./pages/ConstructionManagement";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +40,8 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/products/payroll-software" element={<PayrollSoftware />} />
           <Route path="/products/inventory-management" element={<InventoryManagement />} />
+          <Route path="/products/billing-software" element={<BillingSoftware />} />
+          <Route path="/products/construction-management" element={<ConstructionManagement />} />
           <Route path="/services/it-solutions" element={<ITSolutions />} />
           <Route path="/services/academy" element={<Academy />} />
           <Route path="/services/bpo-services" element={<BPOServices />} />
