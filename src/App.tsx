@@ -17,6 +17,8 @@ import Contact from "./pages/Contact";
 import Courses from "./components/Courses";
 import CourseDetail from "./pages/CoursesDetail";
 import Academy from "./pages/Academy";
+import OurTeam from "./pages/OurTeam";
+import Careers from "./pages/Careers";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +32,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
+          <Route path="/our-team" element={<OurTeam />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products/payroll-software" element={<PayrollSoftware />} />

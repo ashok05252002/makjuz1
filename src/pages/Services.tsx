@@ -7,7 +7,7 @@ const services = [
   {
     icon: <GraduationCap className="h-10 w-10 text-white" />,
     iconBg: 'bg-[#9256a2]',
-    title: "Academy",
+    title: "MakJuz Academy",
     description: "Empower your team with our specialized training and development programs designed to bridge the skill gap.",
     link: "/services/academy"
   },

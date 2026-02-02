@@ -17,11 +17,7 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-<<<<<<< HEAD
-    { name: 'Academy', path: '/courses' },
-=======
     { name: 'Academy', link: 'https://makjuz-academy.vercel.app/' },
->>>>>>> 8f306cf (Add payroll pages, previews, and update core components)
     { name: 'Services', path: '/services' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },

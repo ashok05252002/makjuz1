@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Play, Award, Users, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const stats = [
   { icon: <Award className="h-6 w-6 text-[#905BA0]" />, label: '2+ Years Experience' },
@@ -76,19 +77,25 @@ const Hero = () => {
               transition={{ delay: 0.8, duration: 0.7 }}
             >
               <Button
+                asChild
                 size="lg"
                 className="bg-[#905BA0] hover:bg-[#7d4f8a] text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
-                Call Us
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <Link to="/contact">
+                  Call Us
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </Button>
               <Button
+                asChild
                 variant="outline"
                 size="lg"
                 className="border-2 border-gray-300 hover:border-[#905BA0] text-gray-700 font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:shadow-lg"
               >
-                <Play className="mr-2 h-5 w-5" />
-                Ask Demo
+                <Link to="/contact">
+                  <Play className="mr-2 h-5 w-5" />
+                  Ask Demo
+                </Link>
               </Button>
             </motion.div>
           </div>
@@ -103,7 +110,7 @@ const Hero = () => {
               <img
                 src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=00&fit=crop"
                 alt="Modern software development"
-                className="w-full h-[435px] object-cover"
+                className="w-full h-[430px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#905BA0]/20 to-transparent"></div>
             </div>
